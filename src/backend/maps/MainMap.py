@@ -1,7 +1,8 @@
-from view.maps import MainMapDraw
 import math
-import Model
 import random
+
+import Model
+from view.maps import MainMapDraw
 
 class MainMap:
 	width = None
@@ -21,7 +22,7 @@ class MainMap:
 				d1 = (random.random()-.5)/10
 				d2 = (random.random()-.5)/10
 				d3 = (random.random()-.5)/10
-	
+
 				self.locs[i].append([i*self.size,j*self.size,self.size/5*math.sin(i*.3 + j*1.1) + self.size/5*math.sin(i*.5 - j*.7), [c1,c2,c3] , [d1,d2,d3] ])
 
 		self.locs[2][2][2] += 20
@@ -39,4 +40,4 @@ class MainMap:
 		return self.height
 
 	def draw(self):
-		MainMapDraw.drawMap(self.locs)	
+		MainMapDraw.drawMap(self.locs)

@@ -3,7 +3,6 @@ from OpenGL.GLU import *
 from OpenGL.GLUT import *
 
 class OctoDraw:
-
 	def draw(self):
 		self.drawOcto()
 
@@ -33,7 +32,7 @@ class OctoDraw:
 
 		for i in range(0,8):
 			self.drawTentacle(i)
-			
+
 	def drawTentacle(self,offset):
 		glRotated((360/8)*(offset),0,1,0)
 		legswing = 50
@@ -64,7 +63,7 @@ class OctoDraw:
 		glScaled(1.5,1.5,5)
 		gluCylinder(qobj,1,1,1,8,8)
 		glPopMatrix()
-		
+
 		glTranslated(0,0,5)
 
 		glPushMatrix()
@@ -78,7 +77,5 @@ class OctoDraw:
 		glScaled(1.5,1.5,10)
 		gluCylinder(qobj,1,1,1,8,8)
 		glPopMatrix()
-		
-		glPopMatrix()
-		
 
+		glPopMatrix()

@@ -1,8 +1,9 @@
 from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
-import Model
+
 from utils import Util
+import Model
 
 def draw():
 	Util.setup2D()

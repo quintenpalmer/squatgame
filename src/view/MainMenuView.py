@@ -1,8 +1,10 @@
-import Model
 import math
+
 from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
+
+import Model
 from utils import Util
 
 class MainMenuView:
@@ -13,7 +15,7 @@ class MainMenuView:
 
 		self.drawMap()
 		self.drawModel()
-		
+
 		glFlush()
 		glutSwapBuffers()
 
@@ -36,5 +38,3 @@ class MainMenuView:
 		glScale(66,1,66)
 		glutSolidCube(1)
 		glPopMatrix()
-
-

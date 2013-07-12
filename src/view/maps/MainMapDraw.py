@@ -3,7 +3,6 @@ from OpenGL.GLU import *
 from OpenGL.GLUT import *
 
 def drawMap(locs):
-
 	for i in range(len(locs)-1):
 		for j in range(len(locs[i])-1):
 

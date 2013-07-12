@@ -1,5 +1,5 @@
-import Model
 from utils import Util
+import Model
 
 class GameAmbient:
 	def calc(self):

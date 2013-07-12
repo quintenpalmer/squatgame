@@ -1,5 +1,5 @@
 from maps.MainMap import MainMap
-from characters.human.Human import Human 
+from characters.human.Human import Human
 from utils import Util
 
 class MainGame:
@@ -18,8 +18,8 @@ class MainGame:
 		self.others = []
 		self.others.append(Human(7.0,4.4,7.0,4.5,   15.0,11.0,7.0,  4.0,4.9,5.0,5,  4.0,4.0,4.0))
 		self.player.numOthers += 1
-		self.board = MainMap()	
-	
+		self.board = MainMap()
+
 	def init(self,name):
 		if name == "maingame":
 			self.player = self.playerToGo
@@ -31,7 +31,7 @@ class MainGame:
 
 	def getMap(self):
 		return self.board
-	
+
 	def getOthers(self):
 		return self.others
 
@@ -40,17 +40,17 @@ class MainGame:
 
 	def removeOther(self,person):
 		others.remove(person)
-	
+
 	def animate(self):
 		Util.animate(self.player.physical,self.player.keyframes)
 		for player in self.others:
 			Util.animate(player.physical,player.keyframes)
-	
+
 	def gravity(self):
 		Util.gravity(self.player,self.board)
 		for player in self.others:
 			Util.gravity(player,self.board)
-	
+
 	def getTarget(self):
 		return self.target
 

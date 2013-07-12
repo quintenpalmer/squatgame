@@ -1,5 +1,6 @@
-import Model
 import sys
+
+import Model
 
 class MainMenuHandle:
 	def handleKey(self,key,x,y):

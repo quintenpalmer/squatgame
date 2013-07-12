@@ -1,7 +1,9 @@
+import math
+
 from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
-import math
+
 import Model
 
 def setup3d():
@@ -17,7 +19,7 @@ def setup3d():
 	glMatrixMode(GL_MODELVIEW)
 	glLoadIdentity()
 	gluLookAt(camera.location[0],camera.location[1],camera.location[2],camera.lookAt[0],camera.lookAt[1],camera.lookAt[2],camera.up[0],camera.up[1],camera.up[2])
-	
+
 	light = [0.2,0.2,0.2,1.0]
 	glLightfv(GL_LIGHT0,GL_AMBIENT,light)
 	light0 = [0.5,0.5,0.5,1.0]
@@ -153,7 +155,7 @@ def gravity(player,board):
 
 	d = tdz*tda + bdz*bda
 	dheight = 1 - (yamount - yindex)
-	
+
 	if (yamount-yindex) + (xamount-xindex) > 1:
 		myz = board.locs[xindex+1][yindex][2]
 		lz = board.locs[xindex+1][yindex+1][2]
@@ -175,5 +177,5 @@ def gravity(player,board):
 		amountedge = (dheight-(xamount-xindex))/dheight
 		amountd = (xamount-xindex)/dheight
 		total = edge * amountedge + d * amountd
-	
+
 	player.z = total

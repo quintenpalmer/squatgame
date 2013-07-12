@@ -7,14 +7,14 @@ from utils import Util
 
 class Human(Being):
 	physical = None
-	keyframes = None 
+	keyframes = None
 
 	run = None
 	stand = None
 
 	def __init__(self,nlLeg,nlLegw,nuLeg,nuLegw,    ntorsoHeight,ntorsoWidth,ntorsoDepth,     nlArm,nlArmw,nuArm,nuArmw,   nheadHeight,nheadWidth,nheadDepth):
 		self.tab = 0
-		self.numOthers = 0 
+		self.numOthers = 0
 		self.physical = Physical(nlLeg,nlLegw,nuLeg,nuLegw,    ntorsoHeight,ntorsoWidth,ntorsoDepth,     nlArm,nlArmw,nuArm,nuArmw,   nheadHeight,nheadWidth,nheadDepth)
 		self.keyframes = Standing.Standing()
 		self.run = Running.Running()
@@ -34,6 +34,6 @@ class Human(Being):
 
 	def standing(self):
 		self.keyframes = self.stand
-	
+
 	def blink(self):
 		Util.move(90,0)

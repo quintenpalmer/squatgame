@@ -1,5 +1,4 @@
 
-
 class Being:
 	x = 6000
 	y = 6000
@@ -23,7 +22,7 @@ class Being:
 
 	def setY(self,nY):
 		self.y = nY
-	
+
 	def getZ(self):
 		return self.z
 
@@ -41,11 +40,9 @@ class Being:
 
 	def offAuto(self):
 		self.auto = 0
-	
+
 	def toggleAuto(self):
 		self.auto = 1 - self.auto
 
 	def jump(self):
 		self.dz = .5
-	
-

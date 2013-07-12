@@ -1,5 +1,5 @@
-import Model
 from utils import Util
+import Model
 
 class GameMotion:
 	def motion(self,x,y):

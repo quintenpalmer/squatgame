@@ -1,9 +1,11 @@
-import Model
 import math
-from utils import Util
+
 from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
+
+from utils import Util
+import Model
 import GameInterface
 import Background
 
@@ -18,7 +20,7 @@ class GameView:
 		self.drawOthers()
 		self.drawTarget()
 		self.drawInterface()
-		
+
 		glFlush()
 		glutSwapBuffers()
 
@@ -31,7 +33,7 @@ class GameView:
 
 		player.draw()
 		glPopMatrix()
-	
+
 	def drawOthers(self):
 		for player in Model.getGame().getOthers():
 			self.drawModel(player)

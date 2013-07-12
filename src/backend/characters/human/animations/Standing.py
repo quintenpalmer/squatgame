@@ -1,6 +1,5 @@
 
 class Standing:
-	
 	tic = 0.0
 	maxtime = 100.0
 

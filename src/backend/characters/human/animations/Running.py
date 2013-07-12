@@ -1,7 +1,6 @@
 from utils import Util
 
 class Running:
-	
 	tic = 0.0
 	maxtime = 100.0
 

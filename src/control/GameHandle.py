@@ -1,6 +1,7 @@
+import sys
+
 from utils import Util
 import Model
-import sys
 
 class GameHandle:
 	def handleKey(self,key,x,y):
@@ -22,7 +23,6 @@ class GameHandle:
 			Model.changeView("mainmenu")
 
 		self.handleConstantDown(key)
-
 
 	def handleUpKey(self,key,x,y):
 		if key == 'e' and Model.camove.count("forward") > 0:
@@ -51,7 +51,6 @@ class GameHandle:
 		elif key == '2' and Model.camove.count("cameraup") > 0:
 			Model.camove.remove("cameraup")
 
-
 	def handleConstantDown(self,key):
 		if key == 'e' and Model.camove.count("forward") == 0:
 			Model.getGame().getPlayer().running()
@@ -78,4 +77,3 @@ class GameHandle:
 			Model.camove.append("cameradown")
 		elif key == '2' and Model.camove.count("cameraup") == 0:
 			Model.camove.append("cameraup")
-

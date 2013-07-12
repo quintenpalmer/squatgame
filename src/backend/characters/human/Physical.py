@@ -1,7 +1,6 @@
 import math
 
 class Physical:
-
 #	length/width on bones
 	lLeg = 0
 	lLegw = 0
@@ -22,7 +21,7 @@ class Physical:
 
 #	angles on joints
 	angles = None
-	
+
 	def __init__(self,nlLeg,nlLegw,nuLeg,nuLegw,    ntorsoHeight,ntorsoWidth,ntorsoDepth,     nlArm,nlArmw,nuArm,nuArmw,   nheadHeight,nheadWidth,nheadDepth):
 		self.lLeg = nlLeg
 		self.lLegw = nlLegw
@@ -43,23 +42,23 @@ class Physical:
 		self.headDepth = nheadDepth
 
 		self.angles = []
-		self.angles.append(["lknee",0.0]) 
-		self.angles.append(["lvhip",0.0]) 
-		self.angles.append(["lhhip",0.0]) 
-		self.angles.append(["lvshoulder",0.0]) 
-		self.angles.append(["lhshoulder",0.0]) 
-		self.angles.append(["lelbow",0.0]) 
+		self.angles.append(["lknee",0.0])
+		self.angles.append(["lvhip",0.0])
+		self.angles.append(["lhhip",0.0])
+		self.angles.append(["lvshoulder",0.0])
+		self.angles.append(["lhshoulder",0.0])
+		self.angles.append(["lelbow",0.0])
 
-		self.angles.append(["rknee",0.0]) 
-		self.angles.append(["rvhip",0.0]) 
-		self.angles.append(["rhhip",0.0]) 
-		self.angles.append(["rvshoulder",0.0]) 
-		self.angles.append(["rhshoulder",0.0]) 
-		self.angles.append(["relbow",0.0]) 
+		self.angles.append(["rknee",0.0])
+		self.angles.append(["rvhip",0.0])
+		self.angles.append(["rhhip",0.0])
+		self.angles.append(["rvshoulder",0.0])
+		self.angles.append(["rhshoulder",0.0])
+		self.angles.append(["relbow",0.0])
 
-		self.angles.append(["xhead",0.0]) 
-		self.angles.append(["yhead",0.0]) 
-		self.angles.append(["zhead",0.0]) 
+		self.angles.append(["xhead",0.0])
+		self.angles.append(["yhead",0.0])
+		self.angles.append(["zhead",0.0])
 
 		self.staticHeight = self.uLeg + self.lLeg + self.torsoHeight + self.headHeight
 

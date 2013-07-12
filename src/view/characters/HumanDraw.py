@@ -6,7 +6,7 @@ def drawHuman(physical):
 
 	glTranslate(0,physical.height,0)
 
-	# torso 
+	# torso
 	glPushMatrix()
 
 	glPushMatrix()
@@ -177,5 +177,3 @@ def drawHuman(physical):
 
 	# torso
 	glPopMatrix()
-
-
