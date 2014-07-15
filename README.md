@@ -5,17 +5,25 @@ Written in python using opengl.
 
 Install
 -------
-pip install PyOpenGL PyOpenGL_accelerate
+pip install -r requirements.txt
 
 Run
 ---
-./run.sh
+./squat.sh
 
 Play
 ----
+
+Initial Menu
+============
+g to select character
+
+In Game
+=======
+
 esdf movement
 wr strafe
 q to quit
-g to select and blink
+g to blink
 right click and drag to move camera
 left click and drag to turn character and move camera
