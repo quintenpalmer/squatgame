@@ -1,8 +1,8 @@
-from Physical import Physical
+from .Physical import Physical
 from view.characters import HumanDraw
 from ...Being import Being
-from animations import Standing
-from animations import Running
+from .animations import Standing
+from .animations import Running
 from utils import Util
 
 class Human(Being):

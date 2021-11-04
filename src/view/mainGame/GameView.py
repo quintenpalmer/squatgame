@@ -6,8 +6,8 @@ from OpenGL.GLUT import *
 
 from utils import Util
 import Model
-import GameInterface
-import Background
+from . import GameInterface
+from . import Background
 
 class GameView:
 	def view(self):

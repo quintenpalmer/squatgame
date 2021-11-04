@@ -1,5 +1,5 @@
-from maps.MainMap import MainMap
-from characters.human.Human import Human
+from .maps.MainMap import MainMap
+from .characters.human.Human import Human
 from utils import Util
 
 class MainGame:
