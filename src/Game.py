@@ -38,7 +38,7 @@ class Main:
 		Model.getMotion().motion(x,y)
 
 	def reshape(self,w, h):
-	 	glViewport(0, 0, w, h)
+		glViewport(0, 0, w, h)
 		Model.getWinfo().setXY(w,h)
 		self.init()
 

@@ -9,7 +9,7 @@ class GameHandle:
 			Model.getGame().getPlayer().toggleAuto()
 		if key == 'z':
 			Util.resetCamera()
-	 	if key == '\x20':
+		if key == '\x20':
 			Model.getGame().getPlayer().jump()
 		if key == '\t':
 			Model.getGame().toggleTarget()

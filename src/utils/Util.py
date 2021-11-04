@@ -161,7 +161,7 @@ def gravity(player,board):
 		lz = board.locs[xindex+1][yindex+1][2]
 		mya = (yindex+1)-(yamount)
 		la = (yamount-yindex)
- 		edge = myz*mya + lz*la
+		edge = myz*mya + lz*la
 
 		amountd = (1 - (xamount-xindex))/(1-dheight)
 		amountedge = ((xamount-xindex)- dheight)/(1-dheight)
@@ -172,7 +172,7 @@ def gravity(player,board):
 		lz = board.locs[xindex][yindex+1][2]
 		mya = (yindex+1)-(yamount)
 		la = (yamount-yindex)
- 		edge = myz*mya + lz*la
+		edge = myz*mya + lz*la
 
 		amountedge = (dheight-(xamount-xindex))/dheight
 		amountd = (xamount-xindex)/dheight
